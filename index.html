@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>윤영삭 포트폴리오</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li rel="intro"><a href="">intro</a></li>
+                <li rel="about"><a href="">about</a></li>
+                <li rel="portfolio"><a href="">portfolio</a></li>
+                <li rel="contact"><a href="">contact me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="intro box">
+            <div class="wrap">
+                <div class="typed_wrap">
+                    <h2 class="text_type">
+                        <span class="typed"></span>
+                    </h2>
+                </div>
+                <!-- <a href=""><img src="./img/mycharacter.png" alt=""></a> -->
+            </div>
+        </section>
+
+
+        <section class="about box">
+            <div class="wrap">
+                <div class="profile">
+                    <div class="contents">
+                        <div class="cont1">
+                            <div class="identification_photo">
+                                <div class="img"></div>                              
+                            </div>
+                        </div>
+                        <div class="cont2">
+                            <div class="myinfo">
+                                <h3 class="font2">PROFILe</h3>
+                                <p>윤영삭 youngSak Yun</p>
+                                <p>1997.10. 10
+                                <p>IKSAN of Korea</p>
+                                <p>강남 하이미디어 UI/UX 반응형</p>
+                                <p>웹디자인 & 웹퍼블리셔 과정 수료</p>
+                                <p>웹디자인 기능사 취득</p>
+                            </div>
+                            <div class="myinfo2">
+                                <h3 class="font2">My PLAN</h3>
+                                <p>퍼블리셔,프론트앤드 관련 실무경험하기</p>
+                                <p>GTQ 자격증 취득하기</p>
+                                <p><span class="font2">마부작침</span>하는 마음으로 황소처럼 우직하게 나아가겠습니다.</p>
+                            </div>
+                            <div class="ability">
+                                <h3 class="font2">ABILITY</h3>
+                                <div class="tab_box">
+                                    <div class="circle"></div>
+                                    <div class="circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont3">
+                        <div class="language_stat">
+                            <h3 class="font2">Language Stat</h3>
+                        </div>
+                        <div id="circle_bar">
+                            <div class="frame">
+<!--배열적용  
+-->                                        
+                            </div>
+                    
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio box">
+            <div class="slider">
+                <ul>
+<!--배열적용                    
+-->
+                </ul>
+                <a class="ca prev" href=""><i class="fas fa-chevron-left"></i></a>
+                <a class="ca next" href=""><i class="fas fa-chevron-right"></i></a>
+                <ol>
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ol>
+    
+            </div>            
+        </section>
+
+
+        <section class="contact box">
+            <div class="wrap">
+                <h2>Contact Us</h2>
+                <form class="gform form-elements" name="contactUs" method="post" action="https://script.google.com/macros/s/AKfycbzmJ8KMVyVjhXJMMvF5lY_JrSIpRCNT21O4TVvqCA/exec">
+                    <fieldset>
+                        <legend>구글 메일 발송</legend>
+                        <div class="formlist">
+                            <ul>
+                                <li>
+                                    <label for="name">이름<sup>*</sup></label>
+                                    <span class="inputbox">
+                                        <input type="text" id="name" name="name" placeholder="이름을 입력해주세요" required>
+                                    </span>
+                                </li>
+                                <li>
+                                    <label for="email">답변받을 이메일<sup>*</sup></label>
+                                    <span class="inputbox">
+                                        <input type="email" id="email" name="email" placeholder="sample@mail.com" required>
+                                    </span>
+                                </li>
+                                <li>
+                                    <label for="message">문의 내용<sup>*</sup></label>
+                                    <span class="inputbox">
+                                        <textarea name="message" id="message" placeholder="궁금한 사항을 입력해 주세요"></textarea>
+                                    </span>
+                                </li>
+                            </ul>
+                            <div class="btn_box">
+                                <button type="submit" class="command_btn">문의하기</button>
+                            </div>
+                        </div>
+        
+                        <div class="thankyou_message">
+                            <article>
+                                <h1>작성된 내용이 모두 전송되었습니다.</h1>
+                                <p>메일 확인 후 연락드리겠습니다.</p>
+                                <div class="btn_box">
+                                    <a href="#" class="close">닫기</a>
+                                </div>
+                            </article>
+                        </div>
+                        
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+
+        
+    </main>
+
+    <script src="https://kit.fontawesome.com/9450577c55.js" crossorigin="anonymous"></script>
+    <script src="./js/form-submission-handler.js"></script>
+    <script src="./js/typed.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
+
+    <div class="top_btn">
+        <a href=".intro"><i class="fas fa-arrow-circle-up"></i></a>
+    </div>
+
+</body>
+</html>

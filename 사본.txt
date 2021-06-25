@@ -1,0 +1,6 @@
+1.google 아이디 연동
+2.사본 등록
+https://docs.google.com/spreadsheets/u/0/d/1Bn4m6iA_Xch1zzhNvo_6CoQWqOAgwwkOWJKC-phHx2Q/copy
+3.Current web app URL
+https://script.google.com/macros/s/AKfycbzmJ8KMVyVjhXJMMvF5lY_JrSIpRCNT21O4TVvqCA/exec
+
