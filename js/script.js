@@ -267,6 +267,38 @@ $(document).ready(function(){
         return false;
     });   
     
+    //popup
+
+    $(".tab_box .circle").click(function(){
+        $(".dark").addClass("active");
+        $(".popup").addClass("active");
+    });
+    $(".tab_box .circle:last-child").click(function(){
+        $(".dark").addClass("active");
+        $(".popup_second").addClass("active");
+    });
+
+    $(".close").click(function(){
+        $(".dark").removeClass("active");
+        $(".popup").removeClass("active");
+    });
+    $(".close").click(function(){
+        $(".dark").removeClass("active");
+        $(".popup_second").removeClass("active");
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     function resizeEvt(){
         var $port_mac = $(".port_img").width();

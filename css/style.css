@@ -6,7 +6,7 @@
 .font2{font-family: 'Permanent Marker', cursive;}
 
 html,body{margin: 0;padding: 0;}
-body{min-height: 100vh; overflow-x: hidden;}
+body{min-height: 100vh; /*overflow-x: hidden;*/ /*overflow-y: hidden;*/}
 ul,ol{margin: 0;padding: 0;list-style: none;}
 h1,h2,h3,h4,h5,h6,p{margin: 0;padding: 0;}
 a{text-decoration: none;}
@@ -16,7 +16,7 @@ a{text-decoration: none;}
 
 
 /*header part*/
-header{position: fixed; top: 0; left: 0; width: 100%; height: 80px; background: rgba(0,0,0,0.7); z-index: 9999;}
+header{position: fixed; top: 0; left: 0; width: 100%; height: 80px; background: rgba(0,0,0,0.7); z-index: 8;}
 header nav{width: 100%; height: 100%;}
 header nav ul{width: 100%; height: 100%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; font-weight: 700; text-transform: uppercase;}
 header nav ul li{margin: 0 20px;}
@@ -55,26 +55,38 @@ main .about .wrap{width: 100%; height: 100%; display: flex; flex-wrap: wrap; jus
     background-size: cover;
     background-position:100% 100%;
     background-attachment: fixed;}
-main .about .wrap .profile{width: 0; height: 80%;   
+main .about .wrap .profile{width: 0; /*height: 80%;*/   
      background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;background: rgba(207, 196, 163, 0.603); position: relative; transition: width 1s; transition-delay: 1s; box-shadow: 4px 4px 36px rgba(138, 104, 41, 0.904);}
 main .about.active .wrap .profile{width: 85%; background: rgb(230, 221, 198);}    
 main .about .wrap .profile:before{content: ""; display: block; height: 115%; width: 78px; background-image: url(../img/stick_01.png); background-size: contain; background-position: 50% 50%; background-repeat: no-repeat; position: absolute; top: 50%; left: 0; transform: translate(-50%, -50%); z-index: 2;}
-main .about .wrap .profile:after{content: ""; display: block; height: 115%; width: 78px;  background-image: url(../img/stick_02.png); background-size: contain; background-position: 50% 50%; background-repeat: no-repeat; position: absolute; top: 50%; right: 0; transform: translate(50%, -50%); z-index: 2;}
+main .about .wrap .profile:after{content: ""; display: block; height: 115%; width: 78px;  background-image: url(../img/stick_02.png); background-size: contain; background-position: 50% 50%; background-repeat: no-repeat; position: absolute; top: 50%; right: 0; transform: translate(50%, -50%); z-index: 7;}
 /* main .about .wrap .profile h1{font-size: 35px; text-align: center; opacity: 0;}
 main .about.active .wrap .profile h1{opacity: 1; transition: 1s; transition-delay: 2s;} */
 
 
-main .about .wrap .profile .contents{width: 1200px; height:520px; display: flex; justify-content:center; margin: 0 auto;}
+main .about .wrap .profile .contents{width: 1200px; height:600px; display: flex; justify-content:center; margin: 0 auto;}
 main .about .wrap .profile .contents .cont1{ padding: 10px 300px 10px 42px; opacity: 0; background: rgb(230, 221, 198);}
 main .about.active .wrap .profile .contents .cont1{opacity: 1; transition: 1s; transition-delay: 2s;}
 main .about.active .wrap .profile .contents .cont1 .identification_photo{width: 100%; height: 100%;}
 main .about.active .wrap .profile .contents .cont1 .identification_photo .img{width: 357px; height: 500px; background-image: url(../img/profile.png); background-size: contain; background-position: 50% 50%; background-repeat: no-repeat;}
 
+
 main .about .wrap .profile .contents .cont2{width: 80%; height: 520px; background: rgb(230, 221, 198); padding: 10px 42px 10px 10px; opacity: 0;}
 main .about.active .wrap .profile .contents .cont2{opacity: 1; transition: 1s; transition-delay: 2s; padding-top: 125px;}
 main .about .wrap .profile .contents .cont2 .myinfo{width: 100%; height: auto;}
 main .about .wrap .profile .contents .cont2 .myinfo h3{width: 200px; font-size: 35px; border-bottom: 3px solid #000; padding-bottom: 10px; margin-bottom: 10px;}
+main .about .wrap .profile .contents .cont2 .myinfo p{transform: translateX(100vw);}
+main .about .wrap .profile .contents .cont2 .myinfo2 p{transform: translateX(100vw);}
 
+main .about.active .wrap .profile .contents .cont2 .myinfo p:nth-child(2){transform: translateX(0); transition: 1s; transition-delay: 2s;}
+main .about.active .wrap .profile .contents .cont2 .myinfo p:nth-child(3){transform: translateX(0); transition: 1s; transition-delay: 2.2s;}
+main .about.active .wrap .profile .contents .cont2 .myinfo p:nth-child(4){transform: translateX(0); transition: 1s; transition-delay: 2.4s;}
+main .about.active .wrap .profile .contents .cont2 .myinfo p:nth-child(5){transform: translateX(0); transition: 1s; transition-delay: 2.6s;}
+main .about.active .wrap .profile .contents .cont2 .myinfo p:nth-child(6){transform: translateX(0); transition: 1s; transition-delay: 2.8s;}
+main .about.active .wrap .profile .contents .cont2 .myinfo p:nth-child(7){transform: translateX(0); transition: 1s; transition-delay: 3s;}
+main .about.active .wrap .profile .contents .cont2 .myinfo2 p:nth-child(2){transform: translateX(0); transition: 1s; transition-delay: 3.2s;}
+main .about.active .wrap .profile .contents .cont2 .myinfo2 p:nth-child(3){transform: translateX(0); transition: 1s; transition-delay: 3.4s;}
+main .about.active .wrap .profile .contents .cont2 .myinfo2 p:nth-child(4){transform: translateX(0); transition: 1s; transition-delay: 3.6s;}
 
 main .about .wrap .profile .contents .cont2 .myinfo2{width: 100%; height: auto;}
 main .about .wrap .profile .contents .cont2 .myinfo2 h3{width: 200px; font-size: 30px; border-bottom: 3px solid #000; padding-bottom: 5px; margin-bottom: 5px;}
@@ -82,12 +94,28 @@ main .about .wrap .profile .contents .cont2 .myinfo2 p{}
 main .about .wrap .profile .contents .cont2 .myinfo2 p span{font-size: 24px; font-weight: bold; color: red;}
 
 main .about .wrap .profile .contents .cont2 .ability{}
-main .about .wrap .profile .contents .cont2 .ability h3{}
+main .about .wrap .profile .contents .cont2 .ability .dif{display: flex;}
+main .about .wrap .profile .contents .cont2 .ability .dif h3{width: 100px; border-bottom: 3px solid #000; padding-bottom: 3px; margin-bottom: 8px; animation: line 2.5s infinite;}
+main .about .wrap .profile .contents .cont2 .ability .dif img{height: 30px;}
+main .about .wrap .profile .contents .cont2 .ability .dif p{font-weight: bold; color: red;}
 main .about .wrap .profile .contents .cont2 .ability .tab_box{display: flex;}
-main .about .wrap .profile .contents .cont2 .ability .tab_box .circle{width: 20px; height: 20px; border-radius: 50%; background: brown; margin: 0 10px;}
+main .about .wrap .profile .contents .cont2 .ability .tab_box .circle{width: 20px; height: 20px; border-radius: 50%;  margin: 0 10px; background: brown; animation:circle 6s infinite;}
+main .about .wrap .profile .contents .cont2 .ability .tab_box .circle:last-child{background: #000;}
+@keyframes line{
+    0%{width: 100px;}
+    50%{width: 140px;}
+    100%{width: 100px;}
+}
+@keyframes circle{
+    0%{transform: scale(0.8);}
+    50%{transform: scale(1.4);}
+    100%{transform: scale(0.8);}
+}
 main .about .wrap .profile .contents .cont2 .ability .tab_box .circle:nth-child(1){margin-left: 0;}
+main .about .wrap .profile .contents .cont2 .ability .tab_box .circle:hover{background: #aaaaff;cursor:crosshair;}
 
-main .about .wrap .profile .cont3{width: 1200px; height: calc(100% - 520px); background: rgb(230, 221, 198); opacity: 0; margin: 0 auto; padding: 20px; padding-top: 100px;}
+
+main .about .wrap .profile .cont3{width: 1200px; height: calc(100% - 600px); background: rgb(230, 221, 198); opacity: 0; margin: 0 auto; padding: 20px; padding-top: 100px;}
 main .about.active .wrap .profile .cont3{opacity: 1; transition: 1s; transition-delay: 2s;}
 
 main .about .wrap .profile .cont3 .language_stat{}
@@ -111,7 +139,7 @@ main .about.active .wrap .profile .cont3 .language_stat h3{ text-align: center; 
 #circle_bar .frame .case .cont .bottom{padding-top: 10px; color:#555; text-align: center;}
 #circle_bar .frame .case .cont .bottom h2{font-size: 15px;}
 
-svg{position: relative; width: 150px; height: 150px; z-index: 99;}
+svg{position: relative; width: 150px; height: 150px; z-index: 7;}
 svg circle{width: 100%; height: 100%; fill:none; stroke: rgba(0,0,0,0.1); stroke-width: 10; transform: translate(5px, 5px);}
 svg circle:nth-child(2){
     stroke-linecap: butt; /*스트로크의 선 끝부분 처리 butt, round, project*/
@@ -160,7 +188,7 @@ main .portfolio .slider .ca .fas{font-size: 80px; color: #fff;}
 main .portfolio .slider .ca .fas:hover{color: #000;}
 
 /*페이저*/
-.portfolio .slider ol{position: absolute; bottom: 22%; left: 50%; transform: translateX(-50%); display: flex; flex-wrap: wrap;}
+.portfolio .slider ol{position: absolute; bottom: 12%; left: 50%; transform: translateX(-50%); display: flex; flex-wrap: wrap;}
 .portfolio .slider ol li{width: 20px; height: 3px; border-radius: 4px; background-color: #777; box-shadow: 1px 1px 2px #000; margin: 0 5px; transition: background-color 0.5s, box-shadow 0.5s, width 0.5s;}
 .portfolio .slider ol li.active{background: #ffff00;box-shadow: none; width: 40px;}
 
@@ -180,24 +208,39 @@ main .portfolio .slider .ca .fas:hover{color: #000;}
 .contact .wrap .formlist .btn_box{padding: 20px 10px; border-top: 1px solid #999; text-align: right;}
 .contact .wrap .formlist .btn_box button{font-size: 17px; background-color: #662021; color:#fff; border:none; border-radius:4px; cursor: pointer;}
 .contact .wrap .formlist .btn_box button{background-color: #460001;}
-.thankyou_message{position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 10; background: rgba(0,0,0,0.5); display: none; }
+.thankyou_message{position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 7; background: rgba(0,0,0,0.5); display: none; }
 .thankyou_message article{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 500px; min-width: 320px; background-color: #fff; border-radius: 4px;}
 .thankyou_message article h1{color: #555; font-size: 22px; padding-bottom: 20px; word-break: keep-all;}
 .thankyou_message article p{font-size: 17px; color: #777; padding-bottom: 10px; border-bottom: 1px solid #ccc;}
 .thankyou_message article .btn_box{padding-top: 20px; text-align: right;}
 .thankyou_message article .btn_box a{display: inline-block; padding: 6px 12px; background: #f00; color: #fff; border-radius: 4px; font-size: 17px;}
 
-.top_btn{position: fixed; right:30px; bottom:30px; cursor: pointer; z-index: 1;}
-.top_btn a{font-size: 50px; color:#ff6600;}
+.top_btn{position: fixed; right:30px; bottom:30px; cursor: pointer; z-index: 3;}
+.top_btn a{font-size: 50px; color:#000;}
+
+.dark{width: 100%; height: 100%; background: rgba(0,0,0,0.5); position: fixed; top: 0; left: 0; z-index: -1; opacity: 0; }
+.dark.active{z-index: 10; opacity: 1;} 
+.popup, .popup_second{position: fixed; width: 400px; height: 800px; top: 50%; left: 50%; background: #fff; transform: translate(-50%, -50%); z-index: -1; opacity: 0; text-align: center; padding: 0 30px; padding-top: 50px; border-radius: 8px;}  
+.popup.active, .popup_second.active{z-index: 11; opacity: 1;}
+.popup .close, .popup_second .close{position: absolute; top: -35px; right: -30px; color: #fff; font-size: 30px; cursor: pointer;}
+.popup h2, .popup_second h2{padding-bottom: 30px;}
+.popup .dif_popup, .popup_second .dif_popup{display: flex; padding: 10px 0;}
+.popup .dif_popup img, .popup_second .dif_popup img{height: 30px; padding-right: 20px;}
+.popup_second .dif_popup:last-child img{padding-right: 5px;}
+.popup .dif_popup p, .popup_second .dif_popup p{text-align: left;}
+
+
 
 
 @media (max-width:1400px){
-    main section{height: auto; min-height: 100vh;}
-    main section.intro, main section.about{height: 100vh;}
+    /* main section{height: auto; min-height: 100vh;} */
+    /* main section{width: 100vw;} */
     main .portfolio .slider{width: 100%;}
     main .about .wrap .profile .contents{width: 800px;}
     main .about .wrap .profile .contents .cont1{padding-right: 100px;}
     main .about .wrap .profile .cont3{width: 800px;}
+    .portfolio .slider ol{bottom: 20%;}
+    
     
 }
 @media (max-width:1030px){
@@ -207,7 +250,7 @@ main .portfolio .slider .ca .fas:hover{color: #000;}
     main .about .wrap .profile .contents .cont1{width: 400px; padding-right: 0;}
     #circle_bar .frame .case{width: 50%; height: 200px;}
     main .about.active .wrap .profile .contents .cont1 .identification_photo .img{height: 300px;}
-    main .about.active .wrap .profile .contents .cont2{font-size: 16px; padding-top: 70px;}
+    main .about.active .wrap .profile .contents .cont2{font-size: 16px; padding-top: 70px; z-index: 6;}
     main .about .wrap .profile .cont3{width: 500px; padding-top: 20px;}
     main .about .wrap .profile .cont3 .language_stat h3{font-size: 16px;}
     main .about .wrap .profile .contents .cont2 .myinfo h3{font-size: 16px; padding-bottom: 0; margin-bottom: 0;}
@@ -227,6 +270,7 @@ main .portfolio .slider .ca .fas:hover{color: #000;}
     main .about .wrap .profile .contents .cont2 .myinfo h3{font-size: 16px; width: 120px;}
     main .about .wrap .profile .contents .cont2 .myinfo2 h3{font-size: 16px; width: 120px;}
     main .about .wrap .profile .cont3 .language_stat h3{font-size: 16px;}
+    main section.about{height: 100%;}
 }
 @media (max-width:600px){
     main .about.active .wrap .profile .contents{width: 400px;}
