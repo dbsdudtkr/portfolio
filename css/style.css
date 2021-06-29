@@ -55,16 +55,16 @@ main .about .wrap{width: 100%; height: 100%; display: flex; flex-wrap: wrap; jus
     background-size: cover;
     background-position:100% 100%;
     background-attachment: fixed;}
-main .about .wrap .profile{width: 0; /*height: 80%;*/   
+main .about .wrap .profile{width: 0; height: 80%;   
      background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;background: rgba(207, 196, 163, 0.603); position: relative; transition: width 1s; transition-delay: 1s; box-shadow: 4px 4px 36px rgba(138, 104, 41, 0.904);}
-main .about.active .wrap .profile{width: 85%; background: rgb(230, 221, 198);}    
+main .about.active .wrap .profile{width: 85%; /*height: 100%;*/ background: rgb(230, 221, 198);}    
 main .about .wrap .profile:before{content: ""; display: block; height: 115%; width: 78px; background-image: url(../img/stick_01.png); background-size: contain; background-position: 50% 50%; background-repeat: no-repeat; position: absolute; top: 50%; left: 0; transform: translate(-50%, -50%); z-index: 2;}
 main .about .wrap .profile:after{content: ""; display: block; height: 115%; width: 78px;  background-image: url(../img/stick_02.png); background-size: contain; background-position: 50% 50%; background-repeat: no-repeat; position: absolute; top: 50%; right: 0; transform: translate(50%, -50%); z-index: 7;}
-/* main .about .wrap .profile h1{font-size: 35px; text-align: center; opacity: 0;}
-main .about.active .wrap .profile h1{opacity: 1; transition: 1s; transition-delay: 2s;} */
+main .about .wrap .profile h1{font-size: 35px; text-align: center; opacity: 0;}
+main .about.active .wrap .profile h1{opacity: 1; transition: 1s; transition-delay: 2s;}
 
 
-main .about .wrap .profile .contents{width: 1200px; height:600px; display: flex; justify-content:center; margin: 0 auto;}
+main .about .wrap .profile .contents{width: 1200px; height:600px; display: flex; justify-content:center; margin: 0 auto; overflow: hidden; }
 main .about .wrap .profile .contents .cont1{ padding: 10px 300px 10px 42px; opacity: 0; background: rgb(230, 221, 198);}
 main .about.active .wrap .profile .contents .cont1{opacity: 1; transition: 1s; transition-delay: 2s;}
 main .about.active .wrap .profile .contents .cont1 .identification_photo{width: 100%; height: 100%;}
@@ -75,18 +75,18 @@ main .about .wrap .profile .contents .cont2{width: 80%; height: 520px; backgroun
 main .about.active .wrap .profile .contents .cont2{opacity: 1; transition: 1s; transition-delay: 2s; padding-top: 125px;}
 main .about .wrap .profile .contents .cont2 .myinfo{width: 100%; height: auto;}
 main .about .wrap .profile .contents .cont2 .myinfo h3{width: 200px; font-size: 35px; border-bottom: 3px solid #000; padding-bottom: 10px; margin-bottom: 10px;}
-main .about .wrap .profile .contents .cont2 .myinfo p{transform: translateX(100vw);}
-main .about .wrap .profile .contents .cont2 .myinfo2 p{transform: translateX(100vw);}
+main .about .wrap .profile .contents .cont2 .myinfo p{opacity: 0;}
+main .about .wrap .profile .contents .cont2 .myinfo2 p{opacity: 0;}
 
-main .about.active .wrap .profile .contents .cont2 .myinfo p:nth-child(2){transform: translateX(0); transition: 1s; transition-delay: 2s;}
-main .about.active .wrap .profile .contents .cont2 .myinfo p:nth-child(3){transform: translateX(0); transition: 1s; transition-delay: 2.2s;}
-main .about.active .wrap .profile .contents .cont2 .myinfo p:nth-child(4){transform: translateX(0); transition: 1s; transition-delay: 2.4s;}
-main .about.active .wrap .profile .contents .cont2 .myinfo p:nth-child(5){transform: translateX(0); transition: 1s; transition-delay: 2.6s;}
-main .about.active .wrap .profile .contents .cont2 .myinfo p:nth-child(6){transform: translateX(0); transition: 1s; transition-delay: 2.8s;}
-main .about.active .wrap .profile .contents .cont2 .myinfo p:nth-child(7){transform: translateX(0); transition: 1s; transition-delay: 3s;}
-main .about.active .wrap .profile .contents .cont2 .myinfo2 p:nth-child(2){transform: translateX(0); transition: 1s; transition-delay: 3.2s;}
-main .about.active .wrap .profile .contents .cont2 .myinfo2 p:nth-child(3){transform: translateX(0); transition: 1s; transition-delay: 3.4s;}
-main .about.active .wrap .profile .contents .cont2 .myinfo2 p:nth-child(4){transform: translateX(0); transition: 1s; transition-delay: 3.6s;}
+main .about.active .wrap .profile .contents .cont2 .myinfo p:nth-child(2){opacity: 1; transition: 1s; transition-delay: 2s;}
+main .about.active .wrap .profile .contents .cont2 .myinfo p:nth-child(3){opacity: 1; transition: 1s; transition-delay: 2.2s;}
+main .about.active .wrap .profile .contents .cont2 .myinfo p:nth-child(4){opacity: 1; transition: 1s; transition-delay: 2.4s;}
+main .about.active .wrap .profile .contents .cont2 .myinfo p:nth-child(5){opacity: 1; transition: 1s; transition-delay: 2.6s;}
+main .about.active .wrap .profile .contents .cont2 .myinfo p:nth-child(6){opacity: 1; transition: 1s; transition-delay: 2.8s;}
+main .about.active .wrap .profile .contents .cont2 .myinfo p:nth-child(7){opacity: 1; transition: 1s; transition-delay: 3s;}
+main .about.active .wrap .profile .contents .cont2 .myinfo2 p:nth-child(2){opacity: 1; transition: 1s; transition-delay: 3.2s;}
+main .about.active .wrap .profile .contents .cont2 .myinfo2 p:nth-child(3){opacity: 1; transition: 1s; transition-delay: 3.4s;}
+main .about.active .wrap .profile .contents .cont2 .myinfo2 p:nth-child(4){opacity: 1; transition: 1s; transition-delay: 3.6s;}
 
 main .about .wrap .profile .contents .cont2 .myinfo2{width: 100%; height: auto;}
 main .about .wrap .profile .contents .cont2 .myinfo2 h3{width: 200px; font-size: 30px; border-bottom: 3px solid #000; padding-bottom: 5px; margin-bottom: 5px;}
@@ -115,7 +115,7 @@ main .about .wrap .profile .contents .cont2 .ability .tab_box .circle:nth-child(
 main .about .wrap .profile .contents .cont2 .ability .tab_box .circle:hover{background: #aaaaff;cursor:crosshair;}
 
 
-main .about .wrap .profile .cont3{width: 1200px; height: calc(100% - 600px); background: rgb(230, 221, 198); opacity: 0; margin: 0 auto; padding: 20px; padding-top: 100px;}
+main .about .wrap .profile .cont3{width: 1200px; height: calc(100% - 600px); background: rgb(230, 221, 198); opacity: 0; margin: 0 auto; padding: 20px; padding-top: 100px; }
 main .about.active .wrap .profile .cont3{opacity: 1; transition: 1s; transition-delay: 2s;}
 
 main .about .wrap .profile .cont3 .language_stat{}
@@ -233,12 +233,14 @@ main .portfolio .slider .ca .fas:hover{color: #000;}
 
 
 @media (max-width:1400px){
-    /* main section{height: auto; min-height: 100vh;} */
-    /* main section{width: 100vw;} */
+
+    main section{height: 100%;}
+    main section.intro{height: 100vh;}
+    main section.about{height: 100vh;}
     main .portfolio .slider{width: 100%;}
-    main .about .wrap .profile .contents{width: 800px;}
+    main .about .wrap .profile .contents{width: 800px;width: auto;}
     main .about .wrap .profile .contents .cont1{padding-right: 100px;}
-    main .about .wrap .profile .cont3{width: 800px;}
+    main .about .wrap .profile .cont3{width: 800px;width: auto;}
     .portfolio .slider ol{bottom: 20%;}
     
     
@@ -246,7 +248,7 @@ main .portfolio .slider .ca .fas:hover{color: #000;}
 @media (max-width:1030px){
     main .portfolio .slider ul li.slide > div.port_img{height: 300px;} 
     main .portfolio .slider ul li.slide > div.port_txt p{font-size: 16px;}
-    main .about .wrap .profile .contents{width: 500px;}
+    main .about .wrap .profile .contents{width: 500px; width: auto;}
     main .about .wrap .profile .contents .cont1{width: 400px; padding-right: 0;}
     #circle_bar .frame .case{width: 50%; height: 200px;}
     main .about.active .wrap .profile .contents .cont1 .identification_photo .img{height: 300px;}
@@ -256,7 +258,7 @@ main .portfolio .slider .ca .fas:hover{color: #000;}
     main .about .wrap .profile .contents .cont2 .myinfo h3{font-size: 16px; padding-bottom: 0; margin-bottom: 0;}
     main .about .wrap .profile .contents .cont2 .myinfo2 h3{font-size: 16px; padding-bottom: 0; margin-bottom: 0;}
     main .about.active .wrap .profile .cont3 .language_stat h3{font-size: 16px;}    
-
+    main .about.active .wrap .profile{height: 100%;}
     /* main .portfolio .slider ol{bottom: 20px;} */
 }
 @media (max-width:800px){

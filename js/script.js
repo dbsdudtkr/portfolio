@@ -9,11 +9,15 @@ $(document).ready(function(){
         console.log($index);
         $("header ul li").removeClass("active");
         $(this).addClass("active");
-
-
         
+        $(".about").removeClass("active");
+
         return false;
     });
+    $("header ul li:eq(1)").click(function(){
+        $(this).closest("header").next().find(".about").addClass("active");
+    });
+
 
     let elm = ".box";
     $(elm).each(function(index){
@@ -160,7 +164,7 @@ $(document).ready(function(){
 
             });
         }
-    }, 40000);    
+    }, 4000);    
 
     //#2. 슬라이드 공간에 마우스 오버시 자동 슬라이드 일시정지 기능 부여. hover라는 클래스명이 마우스의 진입여부를 판단
     $(".slider").hover(function(){
@@ -286,17 +290,6 @@ $(document).ready(function(){
         $(".dark").removeClass("active");
         $(".popup_second").removeClass("active");
     });
-
-
-
-
-
-
-
-
-
-
-
 
 
 
