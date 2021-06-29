@@ -285,11 +285,11 @@ main .portfolio .slider .ca .fas:hover{color: #000;}
     main .about .wrap .profile .cont3{margin-left: 44px;}
     main .about.active .wrap .profile .contents .cont2{word-break: keep-all;}
     .contact .wrap{width: 400px;}
-    
+
     header{position: fixed; top: 0; left: 0; width: 100%; height: 80px; background: rgba(0,0,0,0.7); z-index: 8;}
     header nav{width: 100%; height: 100%;}
     header nav ul{width: 100%; height: 100%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; font-weight: 700; text-transform: uppercase;}
     header nav ul li{margin: 0 20px;}
     header nav ul li a{display: block; color: #fff;}
-    header nav ul li.active a{color:#ffcc00;}    
-} 
+    header nav ul li.active a{color:#ffcc00;}     
+}  
