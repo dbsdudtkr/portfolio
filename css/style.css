@@ -228,6 +228,7 @@ main .portfolio .slider .ca .fas:hover{color: #000;}
 .popup .dif_popup img, .popup_second .dif_popup img{height: 30px; padding-right: 20px;}
 .popup_second .dif_popup:last-child img{padding-right: 5px;}
 .popup .dif_popup p, .popup_second .dif_popup p{text-align: left;}
+.popup .dif_popup p.res_p, .popup_second .dif_popup p.res_p{display: none; font-size: 11px; }
 
 
 
@@ -278,13 +279,17 @@ main .portfolio .slider .ca .fas:hover{color: #000;}
 }
 @media (max-width:600px){
     main .about.active .wrap .profile .contents{width: 400px; width: auto;}
-    main .about.active .wrap .profile .contents .cont3{width: auto;}
+    main .about.active .wrap .profile .cont3{width: auto;}
     main .about.active .wrap .profile .contents .cont1{width: 150px;}
     main .about.active .wrap .profile .contents .cont1 .identification_photo{width: 150px;}
     main .about.active .wrap .profile .contents .cont1 .identification_photo .img{width: 150px;}
-    main .about .wrap .profile .cont3{margin-left: 44px;}
     main .about.active .wrap .profile .contents .cont2{word-break: keep-all;}
     .contact .wrap{width: 400px;}
+    @keyframes line{
+        0%{width: 100px;}
+        50%{width: 100px;}
+        100%{width: 100px;}
+    }
 
     header{position: fixed; top: 0; left: 0; width: 100%; height: 80px; background: rgba(0,0,0,0.7); z-index: 8;}
     header nav{width: 100%; height: 100%;}
@@ -292,4 +297,11 @@ main .portfolio .slider .ca .fas:hover{color: #000;}
     header nav ul li{margin: 0 20px;}
     header nav ul li a{display: block; color: #fff;}
     header nav ul li.active a{color:#ffcc00;}     
-}  
+}
+@media (max-width:500px){
+    main .about.active .wrap .profile .cont3{display: none;}
+    main .about .wrap .profile:after{display: none;}
+    .popup, .popup_second{width: 300px; height: 400px;}
+    .popup .dif_popup p, .popup_second .dif_popup p{display: none;}
+    .popup .dif_popup p.res_p, .popup_second .dif_popup p.res_p{display: block;}
+}
