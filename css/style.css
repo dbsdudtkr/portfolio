@@ -278,7 +278,7 @@ main .portfolio .slider .ca .fas:hover{color: #000;}
 }
 @media (max-width:600px){
     main .about.active .wrap .profile .contents{width: 400px; width: auto;}
-    main .about.active .wrap .profile .contents cont3{width: auto;}
+    main .about.active .wrap .profile .contents .cont3{width: auto;}
     main .about.active .wrap .profile .contents .cont1{width: 150px;}
     main .about.active .wrap .profile .contents .cont1 .identification_photo{width: 150px;}
     main .about.active .wrap .profile .contents .cont1 .identification_photo .img{width: 150px;}
