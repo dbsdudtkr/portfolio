@@ -117,7 +117,7 @@ main .about .wrap .profile .contents .cont2 .ability .tab_box .circle:nth-child(
 main .about .wrap .profile .contents .cont2 .ability .tab_box .circle:hover{background: #aaaaff;cursor:crosshair;}
 
 
-main .about .wrap .profile .cont3{width: 1200px; height: calc(100% - 600px); background: rgb(230, 221, 198); opacity: 0; margin: 0 auto; padding: 20px; padding-top: 100px; }
+main .about .wrap .profile .cont3{width: 1200px; height: calc(100% - 600px); background: rgb(230, 221, 198); opacity: 0; margin: 0 auto; padding: 20px;}
 main .about.active .wrap .profile .cont3{opacity: 1; transition: 1s; transition-delay: 2s;}
 
 main .about .wrap .profile .cont3 .language_stat{}
