@@ -99,7 +99,7 @@ $(document).ready(function(){
         ["slide_02", "1", "고정형 사이트", "건축사이트 입니다.", "https://dbsdudtkr.github.io/inspace/", "white", "gray", "orange"],
         ["slide_03", "2", "반응형 사이트", "HTML,CSS로 만든 반응형 웹입니다.", "https://dbsdudtkr.github.io/Origin/", "green", "white", "orange"],
         ["slide_04", "3", "어플리케이션", "구글 API를 연동하여 제작해봤습니다.", "https://dbsdudtkr.github.io/weatherApp1/", "blue", "white", "gray"],
-        ["slide_05", "4", "DB 연동사이트", "실제 운영되는 홈페이지처럼 제작해봤습니다.", "http://dudtkr5388.dothome.co.kr/website/", "orange", "white", "gray"]
+        ["slide_05", "4", "DB 연동사이트", "실제 운영되는 홈페이지처럼 제작해봤습니다.", "http://dudtkr5388.dothome.co.kr/website/", "green", "white", "gray"]
     ];
     let $sli_case = `
     <li class="slide_01" rel="0">
